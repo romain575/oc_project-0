@@ -52,7 +52,7 @@ public class Product {
 	}
 
 	/**
-	 * Displays 0 if the quantity entered and negative, otherwise displays the quantity
+	 * Taken into account the quantity with conditions less than
 	 * @param quantity The quantity entered
 	 */
 	public void setQuantity(int quantity) {
@@ -83,7 +83,7 @@ public class Product {
 
 	/**
 	 * Display the total price of the stock for a product
-	 * @return the stock price
+	 * @return The stock price
 	 */
 	public double getInventoryPrice() {
 		totalStockPrice = quantity * price;
