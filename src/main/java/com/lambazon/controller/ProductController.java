@@ -30,17 +30,15 @@ public class ProductController {
 		return "product";
 	}
 	
+	/**
+	 * Displays the total price of all products in stock
+	 * @return The total stock price
+	 */
 	private double calculateTotalInventoryAmount() {
-		// TODO Auto-generated method stub
-		// return 123456.78;
-		
 		double totalInventoryAmount = 0.0;
 		for (Product p : productService.products()) {
-			totalInventoryAmount+=p.getInventoryPrice();
+			totalInventoryAmount += p.getInventoryPrice();
 		}
-		
 		return totalInventoryAmount;
-		
-		
 	}
 }
