@@ -72,11 +72,11 @@ public class Product {
 	 * @param price The price entered
 	 */
 	public void setPrice(double price) {
-		if (price < 0) {
+		if (price < 0)
 			this.price = 0;
-		} else if (price > 1000) {
+		else if (price > 1000)
 			this.price = 1000;
-		} else {
+		else {
 			this.price = price;
 		}
 	}
