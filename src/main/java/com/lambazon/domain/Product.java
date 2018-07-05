@@ -67,8 +67,18 @@ public class Product {
 		return price;
 	}
 
+	/**
+	 * Taken into account the price with conditions greater than and less than
+	 * @param price The price entered
+	 */
 	public void setPrice(double price) {
-		this.price = price;
+		if (price < 0) {
+			this.price = 0;
+		} else if (price > 1000) {
+			this.price = 1000;
+		} else {
+			this.price = price;
+		}
 	}
 
 	/**
