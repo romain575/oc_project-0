@@ -5,7 +5,7 @@ public class Product {
 	private Integer id;
 	private String name, description, details;
 	private int quantity;
-	private double price;
+	private double price, totalStockPrice;
 
 	public Product(int id, int quantity, double price, String name, String description) {
 		setId(id);
@@ -63,8 +63,12 @@ public class Product {
 		this.price = price;
 	}
 
+	/**
+	 * Display the total price of the stock for a product
+	 * @return the stock price
+	 */
 	public double getInventoryPrice() {
-		// TODO Auto-generated method stub
-		return 0.0;
+		totalStockPrice = quantity * price;
+		return totalStockPrice;
 	}
 }
