@@ -51,8 +51,16 @@ public class Product {
 		return quantity;
 	}
 
+	/**
+	 * Displays 0 if the quantity entered and negative, otherwise displays the quantity
+	 * @param quantity The quantity entered
+	 */
 	public void setQuantity(int quantity) {
-		this.quantity = quantity;
+		if (quantity < 0)
+			this.quantity = 0;
+		else {
+			this.quantity = quantity;
+		}
 	}
 
 	public double getPrice() {
