@@ -5,7 +5,7 @@ public class Product {
 	private Integer id;
 	private String name, description, details;
 	private int quantity;
-	private double price, totalStockPrice;
+	private double price;
 
 	public Product(int id, int quantity, double price, String name, String description) {
 		setId(id);
@@ -86,6 +86,7 @@ public class Product {
 	 * @return The stock price
 	 */
 	public double getInventoryPrice() {
+		double totalStockPrice;
 		totalStockPrice = quantity * price;
 		return totalStockPrice;
 	}
