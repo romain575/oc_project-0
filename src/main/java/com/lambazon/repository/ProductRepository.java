@@ -25,8 +25,8 @@ public class ProductRepository {
 		products.put(++id, new Product(id, 30, 69.99, "JVC HAFX8R Headphone", "Riptidz, In-Ear"));
 		products.put(++id, new Product(id, 40, 32.50, "VTech CS6114 DECT 6.0", "Cordless Phone"));
 		products.put(++id, new Product(id, 50, 895.00, "NOKIA OEM BL-5J", "Cell Phone "));
-		products.put(++id, new Product(id, 25, 349.00, "Home Pod", "Speaker"));
-		products.put(++id, new Product(id, 100, 5.79, "Anker 3.5mm Premium (4ft/1.2m)", "Jack Cable"));
+		products.put(++id, new Product(id, 25, 349.00, "Home Pod", "Speaker")); // Add new product requested by the customer (05/07/18)
+		products.put(++id, new Product(id, 100, 5.79, "Anker 3.5mm Premium (4ft/1.2m)", "Jack Cable")); // Add new product requested by the customer (05/07/18)
 	}
 	
 	public List<Product> products() {

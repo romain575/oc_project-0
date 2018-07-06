@@ -36,7 +36,7 @@ public class ProductController {
 	 */
 	private double calculateTotalInventoryAmount() {
 		double totalInventoryAmount = 0.0;
-		for (Product p : productService.products()) {
+		for (Product p : productService.products()) { // For each product, add their values to get the total value of the stock
 			totalInventoryAmount += p.getInventoryPrice();
 		}
 		return totalInventoryAmount;

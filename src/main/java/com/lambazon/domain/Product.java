@@ -56,9 +56,9 @@ public class Product {
 	 * @param quantity The quantity entered
 	 */
 	public void setQuantity(int quantity) {
-		if (quantity < 0)
+		if (quantity < 0) // If the quantity indicated is less than 0, save 0
 			this.quantity = 0;
-		else {
+		else { // Otherwise save the quantity
 			this.quantity = quantity;
 		}
 	}
@@ -72,11 +72,11 @@ public class Product {
 	 * @param price The price entered
 	 */
 	public void setPrice(double price) {
-		if (price < 0)
+		if (price < 0) // If the price indicated is less than 0, save 0
 			this.price = 0;
-		else if (price > 1000)
+		else if (price > 1000) // Otherwise if the indicated price is greater than 1000, save 1000
 			this.price = 1000;
-		else {
+		else { // Otherwise save the price
 			this.price = price;
 		}
 	}
@@ -87,7 +87,7 @@ public class Product {
 	 */
 	public double getInventoryPrice() {
 		double totalStockPrice;
-		totalStockPrice = quantity * price;
+		totalStockPrice = quantity * price; // Quantity multiplied by the price to get the total price in stock of a product
 		return totalStockPrice;
 	}
 }
