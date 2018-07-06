@@ -86,7 +86,7 @@ public class Product {
 	 * @return The stock price
 	 */
 	public double getInventoryPrice() {
-		double totalStockPrice;
+		double totalStockPrice = 0.0;
 		totalStockPrice = quantity * price; // Quantity multiplied by the price to get the total price in stock of a product
 		return totalStockPrice;
 	}
